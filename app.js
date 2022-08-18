@@ -1,5 +1,5 @@
 'use strict';
-console.log('App is running');
+console.log('Appc is running');
 
 let User = prompt('Whats your name');
 console.log(User);
@@ -42,6 +42,49 @@ if (color === 'Blue') {
 }else {
   alert('great color but its a no for me');
 }
+
+let questions = [
+  'What is my Favorite sport',
+  'What is my Favorite outdoor activity',
+  'What is My Favortie food',
+  'What do I like to on your free time',
+  'How old Im I',
+  'Where do I live',
+
+];
+
+let answers = [
+  'Basketball',
+  'Skydiving',
+  'Pizza',
+  'Chill with my Fam',
+  '19',
+  'Seattle'
+];
+let response = answers;
+let i = 0;
+
+for (let i =0; i < questions.length; i++) {
+  let response = prompt(questions[i]);
+
+  if (typeof(answers[i]) !== 'string') {
+    for (let answers of answers[i]) {
+      if (response === answers) {
+        alert('Correct!!!');
+        break;
+      }
+    }
+  }
+
+
+}
+
+if (response.toLocaleLowerCase === answers[i]) {
+  alert('Correct!!!');
+}else; {
+  alert('Wrong!!!');
+}
+
 
 
 
