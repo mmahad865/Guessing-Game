@@ -43,47 +43,62 @@ if (color === 'Blue') {
   alert('great color but its a no for me');
 }
 
-let questions = [
-  'What is my Favorite sport',
-  'What is my Favorite outdoor activity',
-  'What is My Favortie food',
-  'What do I like to on your free time',
-  'How old Im I',
-  'Where do I live',
 
-];
 
-let answers = [
-  'Basketball',
-  'Skydiving',
-  'Pizza',
-  'Chill with my Fam',
-  '19',
-  'Seattle'
-];
-let response = answers;
-let i = 0;
+alert('You have 10 guesses. Guess 1-10');
+let answer =5;
+let guess = prompt('Whats your guess');
 
-for (let i =0; i < questions.length; i++) {
-  let response = prompt(questions[i]);
 
-  if (typeof(answers[i]) !== 'string') {
-    for (let answers of answers[i]) {
-      if (response === answers) {
-        alert('Correct!!!');
-        break;
-      }
-    }
+for (let i=0;i<10;i++) {
+  if(answer == guess){
+    alert('you are right');
+    break;
+  }else{
+    guess= prompt('Give it another try');
   }
 
+}let myAge = 19;
+let userGuess=prompt('Whats my age');
 
+for (let i=0;i<21;i++) {
+  if(myAge==userGuess){
+    alert('You right Im 19');
+    break;
+  }else{
+    guess=prompt('Nope, try again');
+  }
 }
 
-if (response.toLocaleLowerCase === answers[i]) {
-  alert('Correct!!!');
-}else; {
-  alert('Wrong!!!');
+let numberOfGuesses=3;
+let Activity = ['Baskeetball', 'Skydiving', 'Going to the gym'];
+let myFavActivity= ['basketball', 'skydiving' , 'going to the gym'];
+let userFavGuess=prompt('Whats My favorite Activity');
+let isActivity = false;
+while(numberOfGuesses >0){
+  for (let i=0; i < myFavActivity.length;i++ ){
+    if (userFavGuess.toLocaleLowerCase() === myFavActivity[i]){
+      //isActivity = true;
+      alert('You are right!!!');
+      break;
+    }
+  }
+    
+    // eslint-disable-next-line indent
+    alert('You guessed wronged, think about jumping out of planes and basketball');
+   userFavGuess=prompt('Whats my favorite activity').toLocaleLowerCase();  
 }
+    
+  // if ( isActivity === true){
+  //   alert('You are right!!!');
+  //   break;
+  // }
+    
+
+
+alert('You have answered everything');
+
+
 
 
 
