@@ -90,19 +90,20 @@ for (let i=0;i<21;i++) {
   }
 }
 
-//let numberOfGuesses=3;
+let numberOfGuesses=3;
 //let Activity = ['Baskeetball', 'Skydiving', 'Going to the gym'];
 let myFavActivity= ['basketball', 'skydiving' , 'going to the gym'];
 //let userFavGuess=prompt('Whats My favorite Activity');
 //let isActivity = false;
-while(numberOfGuesses){
+attempt: while(numberOfGuesses){
   let userFavGuess=prompt('Whats My favorite Activity');
   for (let i=0; i < myFavActivity.length;i++ ){
     if (userFavGuess.toLocaleLowerCase() === myFavActivity[i]){
       //isActivity = true;
       alert('You are right!!!');
-      break;
+      break attempt;
     }
+  }
     alert('You guessed wronged, think about jumping out of planes and basketball');
 
 
@@ -110,11 +111,11 @@ while(numberOfGuesses){
 
   if (!numberOfGuesses) {
     alert('Uh oh, you are out of attemps, please refresh the page');
-  }
+  
 }
 
 // eslint-disable-next-line indent
-    alert('You guessed wronged, think about jumping out of planes and basketball');
+    //alert('You guessed wronged, think about jumping out of planes and basketball');
 
 // if ( isActivity === true){
 //   alert('You are right!!!');
