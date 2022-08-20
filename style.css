@@ -29,3 +29,23 @@ li {
     font: large;
     font-style: oblique;
 }
+
+.image-holder {
+    display: inline-block;
+    max-width: 450px;
+    margin: 16px;
+    padding: 12px;
+    border: thin solid brown;
+    border-radius: 5px;
+}
+
+.image-holder h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    color: purple;
+}
+img {
+    width: 400px;
+    
+}
