@@ -10,7 +10,7 @@ if (User === null) {
 }
 
 let myHeight= 6;
-let userGuessMyHeight=prompt('Im I 6 ft tall?');
+let userGuessMyHeight=prompt('Im I 6 ft tall? Yes Or No');
 if (userGuessMyHeight.toLocaleLowerCase()== 'yes'){
   alert('You are correct');
 }else if (userGuessMyHeight.toLocaleLowerCase()== 'no'){
@@ -20,7 +20,7 @@ if (userGuessMyHeight.toLocaleLowerCase()== 'yes'){
 }
 
 let MyFavShow = 'blacklist';
-let userGuessMyShow = prompt('Is blacklist My favorite show');
+let userGuessMyShow = prompt('Is blacklist My favorite show? Yes or No');
 if (userGuessMyShow.toLocaleLowerCase() == 'yes'){
   alert('Correct');
 } else if (userGuessMyShow.toLocaleLowerCase() == 'no'){
@@ -28,6 +28,33 @@ if (userGuessMyShow.toLocaleLowerCase() == 'yes'){
 } else{
   alert('Havent guessed anything');
 }
+alert('You have 10 guesses. Guess 1-10');
+let answer =5;
+let guess = prompt('Whats your guess');
+
+
+for (let i=0;i<10;i++) {
+  if(answer == guess){
+    alert('you are right');
+    break;
+  }else{
+    guess= prompt('Give it another try');
+  }
+
+}let myAge = 19;
+let userGuess=prompt('Whats my age 12-20');
+
+for (let i=0;i<21;i++) {
+  if(myAge==userGuess){
+    alert('You right Im 19');
+    break;
+  }else{
+    guess=prompt('Nope, try again');
+  }
+}
+
+
+
 let Videogames =prompt('whats your fav Game?');
 Videogames = Videogames.toLocaleLowerCase;
 switch (Videogames) {
@@ -65,30 +92,7 @@ if (color === 'Blue') {
 
 
 
-alert('You have 10 guesses. Guess 1-10');
-let answer =5;
-let guess = prompt('Whats your guess');
 
-
-for (let i=0;i<10;i++) {
-  if(answer == guess){
-    alert('you are right');
-    break;
-  }else{
-    guess= prompt('Give it another try');
-  }
-
-}let myAge = 19;
-let userGuess=prompt('Whats my age');
-
-for (let i=0;i<21;i++) {
-  if(myAge==userGuess){
-    alert('You right Im 19');
-    break;
-  }else{
-    guess=prompt('Nope, try again');
-  }
-}
 
 let numberOfGuesses=3;
 //let Activity = ['Baskeetball', 'Skydiving', 'Going to the gym'];
