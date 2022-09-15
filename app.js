@@ -19,6 +19,11 @@ if (userGuessMyHeight.toLocaleLowerCase()== 'yes'){
   alert ('Why didnt you answer');
 }
 
+
+// function myHeight(){
+//   let userGuessMyHeight = yes;
+// }
+
 let MyFavShow = 'blacklist';
 let userGuessMyShow = prompt('Is blacklist My favorite show? Yes or No');
 if (userGuessMyShow.toLocaleLowerCase() == 'yes'){
@@ -28,20 +33,31 @@ if (userGuessMyShow.toLocaleLowerCase() == 'yes'){
 } else{
   alert('Havent guessed anything');
 }
-alert('You have 10 guesses. Guess 1-10');
-let answer =5;
-let guess = prompt('Whats your guess');
-
-
-for (let i=0;i<10;i++) {
-  if(answer == guess){
-    alert('you are right');
-    break;
-  }else{
-    guess= prompt('Give it another try');
+// alert('You have 10 guesses. Guess 1-10');
+// let answer =5;
+// let guess = prompt('Whats your guess');
+function guessNum(){
+  let number= Math.floor(Math.random() * 10) + 1;
+  let guess = parseInt(prompt ('please type your favorite number'));
+  while(guess !==number){
+    guess = parseInt(prompt('Now guess from 1 to 10'));
   }
+  if(guess == number){
+    console.log('you guessed right');
+  }
+  // number == guess ? alert ('Right') : alert (`Wrong the number was ${number}`);
+}
+guessNum();
 
-}let myAge = 19;
+// for (let i=0;i<10;i++) {
+//   if(answer == guess){
+//     alert('you are right');
+//     break;
+//   }else{
+//     guess= prompt('Give it another try');
+//   }
+
+let myAge = 19;
 let userGuess=prompt('Whats my age 12-20');
 
 for (let i=0;i<21;i++) {
